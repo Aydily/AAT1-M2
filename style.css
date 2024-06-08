@@ -24,7 +24,7 @@ footer{
 }
 
 .card-custom-width {
-    width: 22rem;
+    width: auto;
     padding: 5px;
     border: 5px;
   }
