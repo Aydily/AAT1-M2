@@ -1,0 +1,71 @@
+.carousel-inner {
+    margin-top: 10%;
+}
+
+.cardcolor {
+    background-color: black;
+    border: 2px solid #BAF266;
+    color: white;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+.card-title {
+    font-size: 1.5rem;
+}
+
+.cardcolor .btn {
+    background-color: #DAF280;
+    color: black;
+    border: none;
+    width: 70%;
+    height: 45px;
+    margin-bottom: 5%;
+    font-size: 1rem;
+}
+
+.cardcolor .btn:hover {
+    background-color: #BAF266;
+    color: black;
+}
+
+button span {
+    background-color: black;
+}
+
+.row {
+    padding: 0 100px 0 100px;
+}
+
+/* Media queries para ajustar el tamaño de los textos en pantallas más pequeñas */
+@media (max-width: 768px) {
+    .card-title {
+        font-size: 1.2rem;
+    }
+    .card-text {
+        font-size: 0.9rem;
+    }
+    .btn {
+        font-size: 0.9rem;
+        height: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-title {
+        font-size: 1rem;
+    }
+    .card-text {
+        font-size: 0.8rem;
+    }
+    .btn {
+        font-size: 0.8rem;
+        height: 35px;
+    }
+}
