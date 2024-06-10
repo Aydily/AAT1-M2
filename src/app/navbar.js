@@ -1,18 +1,17 @@
 
-document.addEventListener("DOMContentLoaded", () => {
+/*document.addEventListener("DOMContentLoaded", () => {
     cargarNavbar();
   });
-
+*/
 // JavaScript para hacer el navbar reutilizable
-function cargarNavbar() {
-    fetch("../pages/navbar.html")
+export function cargarNavbar() {
+    fetch("/components/navbar.html")
         .then (response => response.text())
         .then(data => {
             document.getElementById("navbar").innerHTML = data;
             initializeNavbar();
         })
         .catch(error => console.error('Error al cargar navbar', error) );
-}
 
 function initializeNavbar(){
 let menu = document.querySelector('#menu-bar');
@@ -39,6 +38,7 @@ window.onscroll = () => {
 }
 else {
     console.error('uno o mas elementos no se encontraron en el documento');
+}
 }
 }
 
