@@ -17,7 +17,7 @@
   --black: #0D0D0D;
   --white: #fff;   
   --grey: #595959;
-}
+}   
 
 ::selection {
   background: var(--green);
@@ -98,6 +98,7 @@ html {
 }
 
 .header-2 .navbar a {
+  text-decoration: none;
   padding: 0.5rem 1.5rem;
   font-size: 2rem;
   color: var(--white);
@@ -111,6 +112,7 @@ html {
 }
 
 .header-2 .icons a {
+  text-decoration: none;
   font-size: 2.5rem;
   color: var(--green);
   padding-left: 1rem;
@@ -129,8 +131,6 @@ html {
   color: var(--green);
   display: none;
 }
-
-/* ----------------- media query start -----------------  */
 
 @media (max-width: 1200px) {
   html {
@@ -157,6 +157,7 @@ html {
     background: var(--black);
     padding: 1rem 2rem;
     display: none;
+    z-index: 999; /* Asegúrate de que el navbar esté en el frente */
   }
   .header-2 .navbar.active {
     display: initial;
