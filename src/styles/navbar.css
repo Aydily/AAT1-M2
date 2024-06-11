@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
 
 * {
-  font-family: "Fira Sans",  sans-serif;
+  font-family: "Fira Sans", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -15,9 +15,9 @@
 :root {
   --green: #BAF266;
   --black: #0D0D0D;
-  --white: #fff;   
+  --white: #fff;
   --grey: #595959;
-}   
+}
 
 ::selection {
   background: var(--green);
@@ -27,7 +27,7 @@
 html {
   font-size: 62.5%;
   overflow-x: hidden;
-  scroll-padding-top: 6.5rem;
+  scroll-padding-top: 10rem; /* Ajustado para compensar la altura de ambos headers */
   scroll-behavior: smooth;
 }
 
@@ -37,6 +37,12 @@ html {
   justify-content: space-between;
   padding: 2rem 9%;
   background-color: #BAF266;
+  position: fixed; /* Fijar la barra de búsqueda y el logo */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Asegurar que esté al frente */
+  margin-bottom: 2rem; /* Aumentar el margen inferior para separación */
 }
 
 .header-1 .logo {
@@ -88,10 +94,10 @@ html {
   box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%);
   background-color: #0D0D0D;
   position: fixed; /* Cambiado a fixed para que siempre esté visible */
-  top: 0;
+  top: 8rem; /* Ajustar para que esté debajo de .header-1 */
   left: 0;
   right: 0;
-  z-index: 1000; /* Asegúrate de que el navbar esté en el frente */
+  z-index: 999; /* Asegurar que esté al frente pero detrás de .header-1 */
 }
 
 .header-2 .navbar a {
@@ -132,7 +138,6 @@ html {
 @media (max-width: 1200px) {
   html {
     font-size: 55%;
-    
   }
 }
 
@@ -140,7 +145,6 @@ html {
   .header-1,
   .header-2 {
     padding: 2rem;
-    z-index: 999; /* Asegúrate de que el navbar esté en el frente */
   }
 }
 
@@ -156,7 +160,7 @@ html {
     background: var(--black);
     padding: 1rem 2rem;
     display: none;
-    z-index: 999; /* Asegúrate de que el navbar esté en el frente */
+    z-index: 998; /* Asegúrate de que el navbar esté en el frente */
   }
   .header-2 .navbar.active {
     display: initial;
