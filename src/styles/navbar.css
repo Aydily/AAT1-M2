@@ -135,6 +135,7 @@ html {
 @media (max-width: 1200px) {
   html {
     font-size: 55%;
+    
   }
 }
 
@@ -142,6 +143,7 @@ html {
   .header-1,
   .header-2 {
     padding: 2rem;
+    z-index: 999; /* Asegúrate de que el navbar esté en el frente */
   }
 }
 
