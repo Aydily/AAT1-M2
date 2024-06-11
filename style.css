@@ -44,3 +44,8 @@ footer {
 .categorias {
   background-color: #595959;
 }
+.col-md-4 img{
+    width: 180px;
+    height: 100px;
+    object-fit: cover;
+}
